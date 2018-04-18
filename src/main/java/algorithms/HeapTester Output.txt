@@ -1,0 +1,106 @@
+The isEmpty method returns true.
+After inserting 5.25 (data a), 4.5 (data b), 3.5 (data c), the heap is:
+
+3.5 -> c 
+5.25 -> a 4.5 -> b 
+
+After inserting 3.14 (data d), the heap is:
+
+3.14 -> d 
+3.5 -> c 4.5 -> b 
+5.25 -> a 
+
+Increasing the capacity from 5 to 10.
+
+After inserting 7.3 (data e), 20 (data f), 4.75 (data g), the heap is:
+
+3.14 -> d 
+3.5 -> c 4.5 -> b 
+5.25 -> a 7.3 -> e 20.0 -> f 4.75 -> g 
+
+After inserting 1.5 (data h), the heap is:
+
+1.5 -> h 
+3.14 -> d 4.5 -> b 
+3.5 -> c 7.3 -> e 20.0 -> f 4.75 -> g 
+5.25 -> a 
+
+After inserting 8.8 (data i), 9.0 (data j), the heap is:
+
+1.5 -> h 
+3.14 -> d 4.5 -> b 
+3.5 -> c 7.3 -> e 20.0 -> f 4.75 -> g 
+5.25 -> a 8.8 -> i 9.0 -> j 
+
+There are 10 elements in the heap.
+The isEmpty method returns false.
+
+removing d
+  get returns d
+The heap is:
+
+1.5 -> h 
+3.5 -> c 4.5 -> b 
+5.25 -> a 7.3 -> e 20.0 -> f 4.75 -> g 
+9.0 -> j 8.8 -> i 
+
+Updating tag for a from 5.25 to 1.0
+The heap is:
+
+1.0 -> a 
+1.5 -> h 4.5 -> b 
+3.5 -> c 7.3 -> e 20.0 -> f 4.75 -> g 
+9.0 -> j 8.8 -> i 
+
+Updating tag for c from 3.5 to 1.25
+The heap is:
+
+1.0 -> a 
+1.25 -> c 4.5 -> b 
+1.5 -> h 7.3 -> e 20.0 -> f 4.75 -> g 
+9.0 -> j 8.8 -> i 
+
+About to remove a
+   handle[0].inCollection() returns false
+   handle[1].inCollection() returns true
+   handle[2].inCollection() returns true
+The heap is:
+
+1.25 -> c 
+1.5 -> h 4.5 -> b 
+8.8 -> i 7.3 -> e 20.0 -> f 4.75 -> g 
+9.0 -> j 
+
+About to remove c
+   handle[0].inCollection() returns false
+   handle[1].inCollection() returns true
+   handle[2].inCollection() returns false
+The heap is:
+
+1.5 -> h 
+7.3 -> e 4.5 -> b 
+8.8 -> i 9.0 -> j 20.0 -> f 4.75 -> g 
+
+Removing i
+  get returns i
+The heap is:
+
+1.5 -> h 
+4.75 -> g 4.5 -> b 
+7.3 -> e 9.0 -> j 20.0 -> f 
+
+Updating tag for h from 1.5 to 10.5
+The heap is:
+
+4.5 -> b 
+4.75 -> g 10.5 -> h 
+7.3 -> e 9.0 -> j 20.0 -> f 
+
+updating tag for b from 4.5 to 12.5
+The heap is:
+
+4.75 -> g 
+7.3 -> e 10.5 -> h 
+12.5 -> b 9.0 -> j 20.0 -> f 
+
+There are 6 elements in the heap.

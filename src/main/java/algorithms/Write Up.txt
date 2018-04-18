@@ -1,0 +1,10 @@
+-This is a GUI representation of the flight planner assignment.
+-Source code is included in the .zip file.
+-The main method is located in Driver.java.
+-You can run the program in two ways.
+1) Run the Driver.java file
+2) Execute the .jar file by either double clicking on it (in Windows)
+   or by typing the following line in a linux terminal: "java -jar FlightPlanner.jar"
+-You will be prompted first for the Airport data file using a file browser
+-You will then be prompted for the Flight Data file
+-The interface is self-explanatory
